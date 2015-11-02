@@ -24,7 +24,7 @@ http://www.adafruit.com/products/1461
 
 3.7V Lithium Ion Rechargable battery with charger. I can't my exact one, but they're out there. You need power.
 
-Slip flange (allows for spinning your bar) if you don't want to spin it, don't bother with the flange.
+Slip Ring with flange (allows for spinning your bar) if you don't want to spin it, don't bother with the flange.
 I used the 12-wire but there is a 6-wire available.<br/>
 http://www.adafruit.com/products/1196 (12-wire) <br/>
 http://www.adafruit.com/products/736 (6-wire)
