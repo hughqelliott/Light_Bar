@@ -11,6 +11,10 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(32, PIN, NEO_GRB + NEO_KHZ800);
 // pixel power leads, add 300 - 500 Ohm resistor on first pixel's data input
 // and minimize distance between Arduino and first pixel.  Avoid connecting
 // on a live circuit...if you must, connect GND first.
+
+//note: in original Light Bar, the strip is split in half with a center post. so 0 to 15 goes in one direction.
+//then feeds to the other side of the post and continues
+// 15-14-13-12-11-10-9-8-7-6-5-4-3-2-1-0 CENTER POST 16-17-18-19-20-21-21-22-23-24-25-26-27-28-29-30-31
 boolean buttonClicked = false;
 int animationType = 0;
 int animationMax = 8;
@@ -81,7 +85,7 @@ void clearStrip(uint8_t wait){
 }
 int ledCount = 0;
 void animateIn(uint8_t wait){
-  //start at 0 and 16
+  //start at 15 and 31
   //cycle through strip.
   //not using delay
   if(ledCount<0){
@@ -90,6 +94,7 @@ void animateIn(uint8_t wait){
     ledCount--;
   }
   Serial.println(ledCount,DEC);
+  //requires 
   strip.setPixelColor(ledCount,strip.Color(255,0,0));
   strip.setPixelColor(ledCount+16,strip.Color(255,0,0));
   strip.show();
