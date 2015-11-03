@@ -22,7 +22,7 @@ LED strip<br/>
 https://www.sparkfun.com/products/12025 <br/>
 http://www.adafruit.com/products/1461
 
-3.7V Lithium Ion Rechargable battery with charger. I can't my exact one, but they're out there. You need power.
+3.7V Lithium Ion Rechargable battery with charger. I can't find my exact one, but they're out there. You need power.
 
 Slip Ring with flange (allows for spinning your bar) if you don't want to spin it, don't bother with the flange.
 I used the 12-wire but there is a 6-wire available.<br/>
