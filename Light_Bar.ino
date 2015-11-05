@@ -30,7 +30,7 @@ void setup() {
 void loop() {
   if(digitalRead(BUTTON_PIN) == LOW){
   //button is clicked
-  Serial.println("BUTTON MOTHERFUCKER!/n");
+  Serial.println("BUTTON PRESSED!/n");//apologies for the earlier version with swearing
   buttonClicked = true;
 }else{
   if(buttonClicked){
